@@ -8,3 +8,7 @@ gcc crackpkcs8.c -o crackpkcs8 -lssl -lcrypto -lpthread
 
 Note: You would need libssl-dev as requirement to compile
 
+
+Decrypt test.pem:
+
+ openssl rsa -in test.pem -out ca.key
