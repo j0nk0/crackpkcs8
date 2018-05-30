@@ -9,6 +9,6 @@ gcc crackpkcs8.c -o crackpkcs8 -lssl -lcrypto -lpthread
 Note: You would need libssl-dev as requirement to compile
 
 
-Decrypt test.pem:
+Decrypt Superfish_CA.pem:(password komodia)(https://blog.erratasec.com/2015/02/exploiting-superfish-certificate.html)
 
- openssl rsa -in test.pem -out ca.key
+ openssl rsa -in Superfish_CA.pem -out Superfish_CA.key
